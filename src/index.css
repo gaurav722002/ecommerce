@@ -1,13 +1,196 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.active{
+    border-bottom: 5px solid orange;
+}
+.mainnav{
+    display: flex;
+    box-shadow: 0px -2px 17px 0px #6a645b;
+    justify-content: space-around;
+    font-size: 20px;
+    align-items: center;
+    text-align: center;
+}
+.mainnav a{
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0 10px;
+    color: rgb(68, 68, 68);
+    cursor: pointer;
+    padding: 17px;
+    text-transform: uppercase;
+}
+.mainnav a:hover{
+    border-bottom: 5px solid orange;
+    color: grey;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.mainnav #nav-logo:hover{
+border: 0;    
+}
+.mainnav span:checked{
+    display: none;
+}
+.mainnav .right i{
+    color: rgb(68, 68, 68);
+    font-size: 30px;
+    margin: 0px 22px;
+}
+.mainnav .right i:hover{
+    color: rgb(255, 166, 0);
+}
+.mainnav img{
+    width: 50px;
+    height: 100%;
+}
+/* main nav bar */
+.producthead{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 10px 0px;
+    border-bottom: 1px solid rgb(219, 219, 219);
+    padding: 15px;
+    text-transform: uppercase;
+}
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 20px;
+}
+.products .product{
+    width: 22rem;
+    height: 100%;
+    overflow: hidden;
+}
+.products .product img{
+    width: 100%;
+    transition: all 0.6s;
+}
+.products .product .img{
+    overflow: hidden;
+    
+}
+.products .product:hover .card-body{
+    background-color: rgb(245, 243, 243);
+}
+.products .product:hover img{
+    transform: scale(1.1);
+}
+.modal-box{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #0404047d;
+}
+.mymodal{
+    display: flex;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 66rem;
+    height: 80%;
+    background-color: white;
+    border-radius: 10px;
+}
+.mymodal input{
+    margin: 0 5px;
+    text-align: center;
+}
+.mymodal input::-webkit-outer-spin-button,::-webkit-inner-spin-button{
+    display: none;
+}
+.mymodal .quantitybtn{
+    border: 4px solid black;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.mymodal .quantitybtn:hover{
+    border: 4px solid black;
+    background-color: white;
+    color: black;
+
+}
+.mymodal div{
+    flex-basis: 50%;
+}
+
+.mymodal img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.mymodal .about-prod{
+    overflow-y: scroll;
+    padding: 10px 20px;
+}
+@media (max-width: 1210px){
+    .mainnav img{
+        width: 40px;
+    }
+    .mainnav a{
+        padding: 9px;
+    }
+}
+@media (max-width: 1080px){
+    .mymodal{
+        width: 100%;
+    }
+}
+@media (max-width: 1077px){
+    .mainnav a{
+     font-size: 15px;
+    }
+    .right a{
+        font-size: 1px;
+    }
+    .products{
+        justify-content: center;
+    }
+}
+@media (max-width: 940px){
+    .mainnav{
+        display: none;
+    }
+}
+@media (max-width: 720px){
+    .producthead{
+        font-size: 25px;
+    }
+    .mymodal{
+        display: block;
+        top: 0;
+        transform: translate(0,0);
+        left: 0;
+        height: 100%;
+        overflow: scroll;
+    }
+    .mymodal .prod-image{
+        display: flex;
+
+    }
+}
+@media (max-width: 400px){
+    .products {
+        justify-content: flex-start;
+    }
+    .products .product .img{
+        width: 90%;
+    }
+    .producthead{
+        font-size: 18px;
+    }
+}
+@media (max-width: 316px){
+    .mymodal input{
+        width: 50%;
+    }
 }

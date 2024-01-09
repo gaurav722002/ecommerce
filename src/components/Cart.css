@@ -1,0 +1,266 @@
+.empty-cart{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 50px 0;
+    height: 93vh;
+}
+.empty-cart .empty-cart-body{
+    flex-basis: 50%;
+    text-align: center;   
+    line-height: 2cm;
+}
+.empty-cart .empty-cart-body h3{
+    margin: 10px 0;
+    color: grey;
+}
+.empty-cart .empty-cart-body a{
+    background-color: black;
+    color: white;
+    border: 8px solid black;
+    padding: 10px 50px;
+    border-radius: 30px;
+    transform: all 0.2s;
+}
+.empty-cart .empty-cart-body a:hover{
+    background-color: white;
+    border: 8px solid orange;
+    color: black;
+    text-decoration: none;
+}
+/* Dialogue */
+.cart-main{
+    margin-bottom: 100px;
+}
+.cart-main .dialogue{
+    background-color: #cececec7;
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.cart-main .dialogue .dial-content{
+    width: auto;
+    padding: 50px 25px;
+    border-radius: 10px;
+    background-color: white;
+    height: min-content;
+}
+.cart-main .dialogue .dial-content button{
+    border: 0;
+    padding: 5px 20px;
+    margin: 5px 15px;
+    font-size: larger;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+}
+/* Dialogue */
+
+.cart-main h1{
+    margin: 0;
+    padding: 10px 0;
+    font-size: 25px;
+
+}
+.cart-body{
+    display: flex;
+    padding: 10px 50px;
+    justify-content:center;
+}
+.cart-body .cart-content{
+    flex-basis: 100%;
+    height: 60vh;
+    overflow-y: scroll;
+}
+.cart-body .heads{
+    display: flex;
+}
+.cart-body .heads h3{
+    font-size: 16px;
+    padding: 5px 0;
+}
+.cart-body .cart-prod{
+    display: flex;
+    padding: 10px 15px;
+    background-color: rgb(225, 225, 225);
+    margin: 5px 0;
+    align-items: center;
+    border-radius: 30px;
+}
+.cart-body .cart-prod .prod-det{
+    flex-basis: 50%;
+}
+.cart-body .cart-prod .prod-det h3{
+    margin: 0;
+    font-size: 16px;
+    padding-left: 20px;
+}
+.cart-body .cart-prod  .prod-price{
+    flex-basis: 10%;
+}
+.cart-body .cart-prod img{
+    border-radius: 50px;
+}
+.cart-body .cart-prod span{
+    background-color: green;
+    color: white;
+    font-size: 12px;
+    border-radius: 30px;
+    padding: 2px 10px;
+    margin-left: 20px;
+}
+ .cart-check{
+    width: 60%;
+    height: auto;
+    background-color: gainsboro;
+    padding: 20px 0;
+    border-radius: 25px;
+}
+.check-body .sub-info div{
+    display: flex;
+    margin: 25px 10px;
+}
+.check-body .sub-info div h3{
+    flex-basis: 30%;
+    font-size: 16px;
+    padding-left: 20px;
+}
+.check-body .sub-info div input{
+    flex-basis: 60%;
+    border: 0;
+    padding: 10px;
+    border-radius: 20px;
+}
+.check-body .sub-info button{
+    border: 0;
+    width: 90%;
+    border-radius: 30px;
+    cursor: pointer;
+    margin: 5px;
+    padding: 10px 0;
+
+}
+.subtotal{
+text-align: center;
+}
+.subtotal span:first-child{
+    font-size: 19px;
+    margin-right: 5px;
+}
+.subtotal span:nth-child(2){
+    color: orange;
+    font-size: 22px;
+}
+.dialogue .dial-content button{
+    background-color: black;
+}
+@media (max-width: 700px){
+    .dialogue{
+        position: relative;
+    }
+    .dialogue .dial-content{
+        position: absolute;
+        bottom: 0;
+    }
+    .dialogue .dial-content button{
+        display: block;
+        width: 95%;
+    }
+    .dialogue .dial-content h3{
+        font-size: 20px;
+    }
+}
+@media (max-width: 680px) {
+    .cart-body{
+        padding: 0px;
+    }
+    .cart-body .heads{
+        display: none;
+    }
+    .cart-body .cart-content{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .cart-body .cart-prod{
+        display: inline-block;
+        margin: 15px;
+        width: 50%;
+        text-align: center;
+        line-height: 1cm;
+        height: fit-content;
+    }
+    .cart-body .cart-prod img{
+        margin: 0 30%;
+    }
+    .cart-body .cart-prod .prod-det h3{
+        font-size: smaller;
+        padding: 0;
+    }
+    .cart-body .cart-prod .prod-det span{
+        font-size: 10px;
+    }
+}
+@media (max-width: 535px){
+    .cart-body .cart-check{
+        width: 80%;
+        font-size: 12px;
+    }
+    .cart-body .cart-check .sub-info h3{
+        font-size: 15px;
+    }
+}
+@media (max-width: 500px){
+    .empty-cart-body h3{
+        font-size: larger;
+    }
+    .empty-cart{
+        display: block;
+        justify-content: flex-start;
+    }
+    .empty-cart-body {
+        width: 100%;
+    }
+}
+@media (max-width: 440px){
+    .cart-body{
+        padding: 0;
+        flex-basis: 100%;
+    }
+    .cart-body .cart-content{
+        width: 100%;
+    }
+    .cart-body .cart-content div{
+        flex-basis: 100%;
+    }
+    .cart-body .cart-prod .prod-det h3{
+        padding: 0;
+        font-size: 15px;
+    }
+}
+@media (max-width: 415px){
+    .cart-body .cart-check{
+        width: 100%;
+        font-size: 10px;
+    }
+    .cart-body .cart-check .sub-info div{
+        margin: 15px 5px;
+    }
+    .cart-body .cart-check .sub-info h3{
+        font-size: 10px;
+    }
+    
+}
+@media (max-width: 300px){
+    .subtotal span:first-child{
+        font-size: 15px;
+        font-weight: 500;
+        }
+        .dialogue .dial-content h3{
+            font-size: 15px;
+        }
+}

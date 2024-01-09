@@ -1,0 +1,113 @@
+.home{
+    position: relative;
+    width: 100%;
+    background-color: black;
+    height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1700508317396-e343a69ac72f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    position: relative;
+    padding: 20px;
+}
+.small-nav{
+    display: none;
+}
+.small-nav-home{
+    display: flex;
+    box-shadow: -3px 13px 21px -16px black;
+    justify-content: space-between;
+    align-items: center;
+}
+.small-nav-home img{
+    width: 50px;
+    filter: invert();
+}
+.small-nav-home i{
+    color: white;
+    font-size: 30px;
+}
+.small-option-bar{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    line-height: 1.5cm;
+    z-index: 2;
+    height: 100vh;
+    background-color: rgb(41, 41, 41);
+}
+.small-option-bar a{
+    display: block;
+    background-color: rgb(41, 41, 41);
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.Navbar{
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 1px solid white;
+    background-color: transparent;
+    background-position: center;
+    left: 17%;
+    top: 5%;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    padding: 0;
+    z-index: 2;
+}
+.Navbar .logo img{  
+    width: 40px;
+    filter: invert();
+}
+.Navbar .categories{
+    text-align: center;
+}
+.categories a{
+ font-size: larger;
+ font-family: cursive;
+ text-transform: lowercase;
+ margin: 0 10px;
+ color: white;
+}
+.categories a:hover{
+    text-decoration: none;
+}
+.Navbar i{
+    color: white;
+    font-size: 30px;
+    padding: 15px;
+}
+.btn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.btn a{
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    font-size: 25px;
+    width: 50px;
+    font-family: cursive;
+    padding: 20px 50px;
+    transition: 0.2s;
+}
+.btn a:hover{
+    padding: 20px 71px;
+    border-radius: 50px;
+
+}
+@media (max-width: 760px){
+    .Navbar {
+        display: none;
+    }
+    .small-nav{
+        display: initial;
+    }
+}

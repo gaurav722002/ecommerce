@@ -1,0 +1,50 @@
+.sm-nav{
+    position: relative;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    box-shadow: 0px -2px 17px 0px #6a645b;
+    padding: 0 10px;
+    display: none;
+}
+.sm-nav img{
+    width: 50px;
+}
+.sm-nav i{
+    font-size: 30px;
+}
+.menu-page{
+    /* display: none; */
+    line-height: 2cm;
+    background-color:#000000bf;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    height: 100vh;
+}
+.menu-page .cartnwish{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: orange;
+}
+.menu-page .cartnwish a{
+    flex-basis: 15%;
+    font-size: 20px;
+}
+.menu-page a{
+    display: block;
+    background-color: orange;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    text-transform: capitalize;
+}
+.menu-page a:hover{
+    background-color: rgb(230, 150, 3);
+}
+@media (max-width: 940px){
+    .sm-nav{
+        display: flex;
+    }
+}
