@@ -18,7 +18,7 @@ const Success = () => {
             <h1>Thanks {customer.name}</h1>
             <h2>Order is successfully placed !</h2>
             <p>Your order is successfully placed in {customer.address} at <span>{time}</span></p>
-            <a href="/ecommerce">Yup!</a>
+            <a href="https://gaurav722002.github.io/ecommerce/">Yup!</a>
         </div>}
         
     </div>
