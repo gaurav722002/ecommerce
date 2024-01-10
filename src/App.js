@@ -14,22 +14,22 @@ const App = () => {
 
   const router = createBrowserRouter([
     {
-      path: "/",
+      path: "ecommerce",
       element: <Home/>,
     },
     {
-      path: "product",
+      path: "ecommerce/product",
       element: <ProductList/>,
     },
     {
-      path:"product/:category",
+      path:"ecommerce/product/:category",
       element:<ProductList/>
     },
     {
-      path:"wishlist",
+      path:"ecommerce/wishlist",
       element:<Wishlist/>
     },{
-      path:"cart",
+      path:"ecommerce/cart",
       element:<Cart/>
     },{
       path:"success",
