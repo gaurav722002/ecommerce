@@ -14,7 +14,7 @@ const App = () => {
 
   const router = createBrowserRouter([
     {
-      path: "ecommerce",
+      path: "/ecommerce",
       element: <Home/>,
     },
     {
