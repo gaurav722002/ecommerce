@@ -18,18 +18,18 @@ const App = () => {
       element: <Home/>,
     },
     {
-      path: "ecommerce/product",
+      path: "product",
       element: <ProductList/>,
     },
     {
-      path:"ecommerce/product/:category",
+      path:"product/:category",
       element:<ProductList/>
     },
     {
-      path:"ecommerce/wishlist",
+      path:"wishlist",
       element:<Wishlist/>
     },{
-      path:"ecommerce/cart",
+      path:"cart",
       element:<Cart/>
     },{
       path:"success",
