@@ -2,6 +2,8 @@ import React, { useContext, useState } from "react";
 import { categoriesnames } from "../App";
 import "./Navbar.css";
 import { NavLink } from "react-router-dom";
+import IMG from "./images/finallogo.png";
+
 const Home = () => {
   const categories = useContext(categoriesnames);
   const [menu,setMenu] = useState(false);
@@ -11,7 +13,7 @@ const Home = () => {
       <div className="small-nav">
       <div className="small-nav-home">
         <div className="small-logo">
-          <img src="/images/finallogo.png" alt="" />
+          <img src={IMG} alt="logo" />
         </div>
         {menu ? <div className="small-close" onClick={()=>{setMenu(false)}}>
           <i className="fa fa-close"></i>
@@ -22,10 +24,10 @@ const Home = () => {
       </div>
       {menu ? 
       <div className="small-option-bar">
-      <NavLink to="/product">All</NavLink>
+      <NavLink to="/ecommerce/product">All</NavLink>
       {categories.map((cat, index) => {
               return (
-                <NavLink to={`product/${cat}`} key={index}>
+                <NavLink to={`/ecommerce/product/${cat}`} key={index}>
                   {cat}
                 </NavLink>
               );
@@ -35,28 +37,28 @@ const Home = () => {
       
         <div className="Navbar">
           <div className="logo">
-            <img src="/images/finallogo.png" alt="Gcart" />
+            <img src={IMG} alt="logo" />
           </div>
           <div className="categories">
             {categories.map((cat, index) => {
               return (
-                <NavLink to={`product/${cat}`} key={index}>
+                <NavLink to={`/ecommerce/product/${cat}`} key={index}>
                   {cat}
                 </NavLink>
               );
             })}
           </div>
           <div className="rightnav">
-            <NavLink to="/cart">
+            <NavLink to="/ecommerce/cart">
               <i class="fa fa-shopping-bag" aria-hidden="true"></i>
             </NavLink>
-            <NavLink to="/wishlist">
+            <NavLink to="/ecommerce/wishlist">
               <i className="fa fa-heart"></i>
             </NavLink>
           </div>
         </div>
         <div className="btn">
-            <NavLink to="/product">Shop</NavLink>
+            <NavLink to="/ecommerce/product">Shop</NavLink>
         </div>
       </div>
     </>

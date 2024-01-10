@@ -3,6 +3,7 @@ import Span from "./Span";
 import { NavLink } from "react-router-dom";
 import { categoriesnames } from "../App";
 import NavbarII from "./NavbarII";
+import IMG from "./images/finallogo.png"
 
 const MainNavbar = () => {
   const categories = useContext(categoriesnames);
@@ -12,12 +13,11 @@ const MainNavbar = () => {
       <div className="mainnav">
         
           <div className="logo">
-          <NavLink to="/" id="nav-logo"><img src="/images/finallogo.png" alt="" /></NavLink>
+          <NavLink to="/ecommerce"  id="nav-logo"><img src={IMG} alt="logo" /></NavLink>
           </div>
         <div className="cat">
           <NavLink
-            exact
-            to="/product"
+            to="/ecommerce/product"
             style={{ backgroundColor: "orange", color: "white" }}
           >
             All
@@ -27,10 +27,10 @@ const MainNavbar = () => {
           })}
         </div>
         <div className="right">
-          <NavLink to="/cart">
+          <NavLink to="/ecommerce/cart">
             <i className="fa fa-shopping-bag"></i>
           </NavLink>
-          <NavLink to="/wishlist">
+          <NavLink to="/ecommerce/wishlist">
             <i className="fa fa-heart"></i>
           </NavLink>
         </div>

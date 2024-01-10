@@ -35,7 +35,7 @@ const Cart = () => {
               style={{ width: "200px", borderRadius: "50%", height: "150px" }}
             />
             <h3>Your Cart is empty</h3>
-            <NavLink to="/product" className="shop-btn">
+            <NavLink to="/ecommerce/product" className="shop-btn">
               <i
                 className="fa fa-cart-shopping"
                 style={{ fontSize: "20px", margin: "2px" }}

@@ -15,6 +15,10 @@ body{
     align-items: center;
     text-align: center;
 }
+.mainnav .logo {
+    height: 100%;
+    display: flex;
+}
 .mainnav a{
     text-decoration: none;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -28,7 +32,6 @@ body{
     border-bottom: 5px solid orange;
     color: grey;
 }
-
 .mainnav #nav-logo:hover{
 border: 0;    
 }

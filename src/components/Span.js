@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 const Span = (props) => {
   return <>
     <NavLink
-        to = {`/product/${props.value}`}
+        to = {`/ecommerce/product/${props.value}`}
     >
       {props.value}
     </NavLink>

@@ -1,6 +1,7 @@
 // import { type } from "@testing-library/user-event/dist/type";
 import React, { useContext, useEffect, useState } from "react";
 import { CartAPIData } from "../context/CartAPI";
+import IMG from "./images/react-ecommerce-sticker.jpg";
 
 const ModalProduct = (props) => {
   const [quantity, setQuantity] = useState(1);
@@ -70,7 +71,7 @@ const ModalProduct = (props) => {
 
           <br />
           <img
-            src="/images/react-ecommerce-sticker.jpg"
+            src={IMG}
             alt=""
             style={{ width: "100%", height: "auto" }}
           />

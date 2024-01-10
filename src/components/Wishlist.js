@@ -5,6 +5,7 @@ import { categoriesnames } from "../App";
 import "./Wishlist.css";
 import WishProd from "./WishProd";
 import { WishlistAPII } from "../context/WishlistApi";
+import IMG from "./images/source.gif"
 
 const Wishlist = () => {
   const categories = useContext(categoriesnames);
@@ -19,7 +20,7 @@ const Wishlist = () => {
             className="wish-empty-body"
           >
             <img
-              src="/images/source.gif"
+              src={IMG}
               alt=""
               width="30%"
               style={{ position: "relative", left: "25%" }}
@@ -35,7 +36,7 @@ const Wishlist = () => {
               >
                 Make yourself happy by continue the shopping
               </h3>
-              <NavLink to="/product">
+              <NavLink to="/ecommerce/product">
                 <button className="shop-btn">Go Shop</button>
               </NavLink>
             </div>
